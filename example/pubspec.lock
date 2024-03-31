@@ -50,11 +50,13 @@ packages:
     source: hosted
     version: "1.0.6"
   ecommerce_design_system:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: cf672c70c8131997eb824981b791ea6d0224390e
+      url: "https://github.com/brunolemes318/ecommerce_desing_system.git"
+    source: git
     version: "0.0.1"
   fake_async:
     dependency: transitive
