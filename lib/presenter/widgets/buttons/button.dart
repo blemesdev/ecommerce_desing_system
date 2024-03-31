@@ -1,38 +1,23 @@
+import 'package:ecommerce_design_system/domain/interfaces/button_login_interface.dart';
 import 'package:flutter/material.dart';
 
-abstract class IButtonLoginSocial<R> {
-  String name;
-  Icon icon;
-  Widget child;
-  ButtonStyle? style;
-
-  R Function() onPressed;
-
-  IButtonLoginSocial({
-    required this.name,
-    required this.icon,
-    required this.onPressed,
-    required this.child,
-  });
-}
-
-class ButtonLoginSocial extends StatelessWidget implements IButtonLoginSocial {
+class ButtonLoginSocial extends StatelessWidget implements IButtonLogin {
   @override
-  Icon icon;
+  final Icon icon;
 
   @override
-  String name;
+  final String name;
 
   @override
-  Widget child;
+  final Widget child;
 
   @override
-  ButtonStyle? style;
+  final ButtonStyle style;
 
   @override
-  Function() onPressed;
+  final Function() onPressed;
 
-  ButtonLoginSocial({
+  const ButtonLoginSocial({
     super.key,
     required this.name,
     required this.icon,
@@ -49,26 +34,4 @@ class ButtonLoginSocial extends StatelessWidget implements IButtonLoginSocial {
       child: child,
     );
   }
-}
-
-class ButtonLoginFacebook<int> extends ButtonLoginSocial {
-  ButtonLoginFacebook({
-    super.key,
-    required super.name,
-    required super.icon,
-    required super.onPressed,
-    required super.style,
-    required super.child,
-  });
-}
-
-class ButtonLoginGmail extends ButtonLoginSocial {
-  ButtonLoginGmail({
-    super.key,
-    required super.name,
-    required super.icon,
-    required super.onPressed,
-    required super.style,
-    required super.child,
-  });
 }
