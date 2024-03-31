@@ -1,4 +1,4 @@
-import 'package:ecommerce_design_system/domain/interfaces/button_login_abstract.dart';
+import 'package:ecommerce_design_system/domain/interfaces/button_login_interface.dart';
 
 class ButtonLoginFacebook extends ButtonLoginSocial {
   const ButtonLoginFacebook(
