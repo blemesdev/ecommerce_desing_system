@@ -17,14 +17,13 @@ class ButtonLoginSocial extends StatelessWidget implements IButtonLogin {
   @override
   final Function() onPressed;
 
-  const ButtonLoginSocial({
-    super.key,
-    required this.name,
-    required this.icon,
-    required this.onPressed,
-    required this.child,
-    required this.style,
-  });
+  const ButtonLoginSocial(
+      {super.key,
+      required this.icon,
+      required this.name,
+      required this.style,
+      required this.onPressed,
+      required this.child});
 
   @override
   Widget build(BuildContext context) {
